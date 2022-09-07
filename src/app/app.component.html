@@ -1,0 +1,32 @@
+<div class="container">
+  <div *ngIf="!loading" class="main">
+    <h1>{{ city }} Weather forecast</h1>
+    <div class="weather-container">
+      <app-weather-card
+        [temp]="weatherToday"
+        [date]="todayFormatted"
+        [forecast]="forecastToday[0]"
+      ></app-weather-card>
+      <app-weather-card
+        [temp]="weatherDay2"
+        [date]="day2Formatted"
+        [forecast]="forecast2[0]"
+      ></app-weather-card>
+      <app-weather-card
+        [temp]="weatherDay3"
+        [date]="day3Formatted"
+        [forecast]="forecast3[0]"
+      ></app-weather-card>
+      <app-weather-card
+        [temp]="weatherDay4"
+        [date]="day4Formatted"
+        [forecast]="forecast4[0]"
+      ></app-weather-card>
+      <app-weather-card
+        [temp]="weatherDay5"
+        [date]="day5Formatted"
+        [forecast]="forecast5[0]"
+      ></app-weather-card>
+    </div>
+  </div>
+</div>
